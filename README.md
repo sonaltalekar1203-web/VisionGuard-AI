@@ -68,7 +68,13 @@ VisionGuard AI is a computer vision prototype that detects anomalous industrial 
 
 ### 4. Inspection History and Anomaly Distribution
 ![Inspection History](screenshots/04_inspection_history.png)
+## 🎥 Project Demo
 
+[Watch the VisionGuard AI Demo](demo/VisionGuard_AI_Demo_Final.mp4)
+
+## 📸 Application Screenshots
+
+Explore the screenshots in the [screenshots folder](screenshots/).
 ### 5. PDF Inspection Report
 ![PDF Report Page 1](screenshots/05_pdf_report_page_1.png)
 
