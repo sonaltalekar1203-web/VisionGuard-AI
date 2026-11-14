@@ -51,3 +51,25 @@ VisionGuard AI is a computer vision prototype that detects anomalous industrial 
               v
          PDF Report
          
+
+
+---
+
+## Application Screenshots
+
+### 1. Product Inspection
+![Product Inspection](screenshots/01_product_inspection.png)
+
+### 2. AI Defect Detection Results
+![Defect Detection](screenshots/02_inspection_results.png)
+
+### 3. Quality Analytics Dashboard
+![Quality Analytics](screenshots/03_quality_analytics_overview.png)
+
+### 4. Inspection History and Anomaly Distribution
+![Inspection History](screenshots/04_inspection_history.png)
+
+### 5. PDF Inspection Report
+![PDF Report Page 1](screenshots/05_pdf_report_page_1.png)
+
+![PDF Report Page 2](screenshots/06_pdf_report_page_2.png)
