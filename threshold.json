@@ -1,0 +1,8 @@
+{
+    "threshold": 39.40333557128906,
+    "status": "provisional",
+    "calibration_method": "maximum_normal_calibration_score",
+    "calibration_normal_images": 11,
+    "evaluation_images": 58,
+    "note": "Development threshold; requires independent validation."
+}
