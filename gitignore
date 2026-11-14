@@ -1,0 +1,44 @@
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Secrets
+.env
+*.env
+
+# Large trained models
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Datasets
+Datasets/
+datasets/
+visionguard_dataset/
+
+# Uploaded and generated files
+uploads/*
+outputs/*
+reports/*
+!uploads/.gitkeep
+!outputs/.gitkeep
+!reports/.gitkeep
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Operating system files
+.DS_Store
+Thumbs.db
