@@ -1,68 +1,53 @@
+
 # VisionGuard AI
+### AI-Powered Industrial Defect Detection and Predictive Quality Intelligence
 
-AI-powered industrial defect detection and predictive quality intelligence using PatchCore and computer vision.
+VisionGuard AI is a computer vision prototype that detects anomalous industrial products using PatchCore, visualizes suspicious regions through anomaly heatmaps, maintains inspection history, and generates PDF inspection reports.
 
-## Overview
+## Key Features
 
-VisionGuard AI is a prototype industrial visual-inspection system that identifies anomalous products, highlights suspicious regions, records inspection history, and generates PDF inspection reports.
-
-## Features
-
-- PatchCore-based anomaly detection
-- Defect heatmaps and localization overlays
+- PatchCore-based industrial anomaly detection
+- Anomaly heatmaps and defect localization overlays
 - FastAPI prediction backend
 - Streamlit inspection dashboard
-- SQLite inspection history
-- PDF inspection reports
+- SQLite-based inspection history
 - Quality analytics and CSV export
+- PDF inspection report generation
 
 ## Technology Stack
 
-- Python
-- PyTorch
-- Anomalib
-- PatchCore
-- FastAPI
-- Streamlit
-- OpenCV
-- SQLite
-- Plotly
-- ReportLab
+| Area | Technologies |
+|---|---|
+| Deep Learning | PyTorch, Torchvision, Anomalib |
+| Model | PatchCore, Wide ResNet-50-2 |
+| Backend | FastAPI, Uvicorn |
+| Frontend | Streamlit, Plotly |
+| Image Processing | Pillow, NumPy |
+| Database | SQLite |
+| Reporting | ReportLab |
 
-## Dataset
-
-This project uses the MVTec Anomaly Detection (MVTec AD) dataset.
-
-The current trained model focuses on the `metal_nut` category.
-
-## Preliminary Results
-
-| Metric | Result |
-|---|---:|
-| Image-level ROC-AUC | 0.998 |
-| Image-level Average Precision | 0.9996 |
-| Pixel-level ROC-AUC | 0.9862 |
-| Pixel-level Average Precision | 0.8859 |
-
-These are development results on the dataset used during experimentation. They should not be interpreted as independent validation or production performance.
-
-## Important Limitations
-
-- Current implementation is trained on the metal_nut category.
-- The decision threshold is provisional.
-- Independent validation is required before industrial deployment.
-- The trained model checkpoint and original dataset are not included in this repository.
-
-## Project Structure
+## System Architecture
 
 ```text
-VisionGuard-AI/
-├── backend/
-├── frontend/
-├── models/
-├── uploads/
-├── outputs/
-├── reports/
-├── database/
-├── tests/
-└── README.md
+                 User uploads image
+                         |
+                         v
+               Streamlit Dashboard
+                         |
+                         v
+                  FastAPI Backend
+                         |
+                         v
+                  PatchCore Model
+                         |
+               Anomaly Score + Map
+                         |
+              +----------+----------+
+              |          |          |
+              v          v          v
+          Prediction   SQLite    Heatmap
+                       History   Visualization
+              |
+              v
+         PDF Report
+         
