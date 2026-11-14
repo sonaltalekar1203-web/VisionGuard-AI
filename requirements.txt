@@ -1,24 +1,23 @@
 
-# Deep learning and anomaly detection
-torch
-torchvision
+# Core AI / Deep Learning
+torch==2.14.1
+torchvision==0.29.1
 anomalib==2.7.0
+numpy==2.4.6
 
 # Backend
-fastapi
+fastapi==0.141.1
 uvicorn
 python-multipart
 
 # Frontend
-streamlit
+streamlit==1.67.0
+requests==2.32.4
+pandas==2.2.3
+plotly==5.24.1
 
-# Image processing and data
-opencv-python-headless
-pillow
-numpy
-pandas
-plotly
-requests
+# Image processing
+Pillow==11.3.0
 
-# PDF reports
-reportlab
+# PDF generation
+reportlab==5.1.0
